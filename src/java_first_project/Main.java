@@ -2,28 +2,35 @@ package java_first_project;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import test.Hello;
+
 public class Main {
-	
+
 	public static void hello() {
 		System.out.println("hello~");
 	}
-	
+
 	public static double add(double num1, double num2) {
 		return num1 + num2;
 	}
+
 	public static double subtrac(double num1, double num2) {
 		return num1 - num2;
 	}
+
 	public static double multipli(double num1, double num2) {
 		return num1 * num2;
 	}
+
 	public static double division(double num1, double num2) {
 		return num1 / num2;
 	}
+
 	public static void main(String[] args) {
-		
+
 //		hello();
 //		System.out.println(sum(1,2));
 		// TODO Auto-generated method stub
@@ -31,7 +38,7 @@ public class Main {
 //		System.out.println("반가워요");
 //		System.out.println("잘있어요");
 //		System.out.println("다시 만나요");
-		
+
 		Scanner scanner = new Scanner(System.in);
 //		System.out.println("이름, 나이, 키, 결혼 여부 입력하세요");
 //		String name = scanner.next();
@@ -45,7 +52,7 @@ public class Main {
 //		System.out.println("나이는 " + age);
 //		System.out.println("키는 " + height);
 //		System.out.println("결혼 여부 " + single);
-		
+
 //		System.out.println("이름을 입력하세요");
 //		String name = scanner.next();
 //		System.out.println("나이를 입력하세요");
@@ -81,7 +88,7 @@ public class Main {
 //			j++;
 //		}while (j<10);
 //		
-		
+
 //		System.out.println("나이를 입력하세요");
 //		int age = scanner.nextInt();
 //		
@@ -96,8 +103,7 @@ public class Main {
 //		}else if(age >=20) {
 //			System.out.println("성인");
 //		}
-		
-		
+
 //		System.out.println("이름을 입력하세요");
 //		String name = scanner.next();
 //		switch(name) {
@@ -110,8 +116,7 @@ public class Main {
 //		default:
 //			System.out.println("모르겠어요");
 //		}
-		
-		
+
 //		System.out.println("숫자를 입력하세요");
 //		int age = scanner.nextInt();
 //		
@@ -127,7 +132,7 @@ public class Main {
 //		System.out.println("뺄셈 결과 : " + subtrac(num1, num2));
 //		System.out.println("곱셈 결과 : " + multipli(num1, num2));
 //		System.out.println("나눗셈 결과 : " + division(num1, num2));
-		
+
 //		배열
 //		int[] arr1 = {0,0,0};
 //		int[] arr2 = new int[3];
@@ -143,7 +148,7 @@ public class Main {
 //		for(int value : arr1) {
 //			System.out.println(value + " ");
 //		}
-		
+
 //		2 차원 배열
 //		int[][] arr1 = {{0,1,2},{3,4,5}};
 //		int[][] arr2 = new int[2][3];
@@ -180,28 +185,108 @@ public class Main {
 //		
 ////		요소 모두 제거
 //		arrayList1.clear();
+
 		
-		int[] arr1 = new int[5];
-		int sum = 0;
-		ArrayList<String> arrayList1 = new ArrayList<>();
-//		System.out.println("5개의 정수를 입력하세요");
-//		for(int i=0; i<arr1.length; i++) {
-//			arr1[i] = scanner.nextInt();
-//			sum += arr1[i];
+		/*
+		 * int[] arr1 = new int[5]; 
+		 * int sum = 0; 
+		 * ArrayList<String> arrayList1 = new ArrayList<>();
+		 * System.out.println("5개의 정수를 입력하세요"); 
+		 * // for(int i=0;i<arr1.length; i++) { 
+		 * // arr1[i] = scanner.nextInt(); 
+		 * // sum += arr1[i]; // }
+		 * // System.out.println((double)sum/arr1.length);
+		 * 
+		 * String str = ""; 
+		 * while(!str.equals("exit")) {
+		 * System.out.println("문자를 입력해주세요. : "); 
+		 * str = scanner.nextLine();
+		 * if(!str.equals("exit")) arrayList1.add(str); }
+		 * 
+		 * // while(true) { 
+		 * // System.out.println("문자를 입력해주세요. : "); 
+		 * // String str = scanner.nextLine(); 
+		 * // if(str.equals("exit")) break; 
+		 * // arr.add(str); 
+		 * //}
+		 * for(int i=0; i<arrayList1.size(); i++) {
+		 * System.out.println(arrayList1.get(i)); }
+		 */
+
+//      예외처리
+		/*
+		 * int num1 = 5; int num2 = 0;
+		 * 
+		 * try { System.out.println(num1 / num2); } catch (ArithmeticException e) {
+		 * System.out.println("0으로 나눌 수 없습니다"); } finally { System.out.println("끝"); }
+		 * 
+		 * 
+		 * 
+		 * 
+		 * try { int num = scanner.nextInt(); System.out.println(num); } catch
+		 * (InputMismatchException e) { System.out.println("정수를 입력하세요"); }
+		 */
+		
+		
+//		int[] arr1 = new int[4];
+//		for(int i = 0; i < 4; i++) {
+//			arr1[i] = i+1;
 //		}
-//		System.out.println((double)sum/5);
+//		try {
+//			for(int i = 0; i < 5; i++) {
+//				System.out.println(arr1[i]);
+//			}
+//		}catch(ArrayIndexOutOfBoundsException e) {
+//			System.out.println("인덱스가 범위를 벗어났습니다.");
+//		}
 		
-		String str = "";
-		while(!str.equals("exit")) {
-			System.out.println("문자를 입력해주세요. : ");
-			str = scanner.nextLine();
-			arrayList1.add(str);
-		}
-		for(int i=0; i<arrayList1.size()-1; i++) {
-			System.out.println(arrayList1.get(i));
+		
+		
+
+//		Person person1 = new Person("ki", 26);
+//		person1.myname();
+		
+//		int width = scanner.nextInt();
+//		int height = scanner.nextInt();
+//		Rectangle rectangle = new Rectangle(width, height);
+//		
+//		System.out.println(rectangle.area());
+		
+//		Hello hello1 = new Hello();
+//		hello1.hello();
+		
+//		Person person1 = new Person();
+//		person1.setName("ku");
+//		System.out.println(person1.getName());
+//		
+		ArrayList<Rectangle> rect = new ArrayList<>();
+		while(true) {
+			System.out.println("사각형의 가로와 세로 길이를 띄어쓰기를 기준으로 입력해주세요");
+			int width = scanner.nextInt();
+			int height = scanner.nextInt();
+			if(width == 0 && height == 0) break;
+			Rectangle rectangle = new Rectangle(width);
+			rectangle.setHeight(height);
+			rect.add(rectangle);
 		}
 		
+		for(Rectangle value : rect) {
+			System.out.println("가로 길이는: " + value.getWidth());
+			System.out.println("세로 길이는: " + value.getHeight());
+			System.out.println("넓이는: " + value.area());
+			System.out.println("-------------------------");
+		}
+		System.out.println("Rectangle 인스턴스의 개수는: " + );
+		
+		Number number1 = new Number();
+		Number number2 = new Number();
+		number1.num1 = 1;
+		number1.num2 = 1;
+		
+		System.out.println(number2.num1);
+		System.out.println(number2.num2);
+		
+
 		
 	}
 }
-		
