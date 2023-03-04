@@ -259,34 +259,53 @@ public class Main {
 //		person1.setName("ku");
 //		System.out.println(person1.getName());
 //		
-		ArrayList<Rectangle> rect = new ArrayList<>();
-		while(true) {
-			System.out.println("사각형의 가로와 세로 길이를 띄어쓰기를 기준으로 입력해주세요");
-			int width = scanner.nextInt();
-			int height = scanner.nextInt();
-			if(width == 0 && height == 0) break;
-			Rectangle rectangle = new Rectangle(width);
-			rectangle.setHeight(height);
-			rect.add(rectangle);
-		}
+//		ArrayList<Rectangle> rect = new ArrayList<>();
+//		while(true) {
+//			System.out.println("사각형의 가로와 세로 길이를 띄어쓰기를 기준으로 입력해주세요");
+//			int width = scanner.nextInt();
+//			int height = scanner.nextInt();
+//			if(width == 0 && height == 0) break;
+//			Rectangle rectangle = new Rectangle(width);
+//			rectangle.setHeight(height);
+//			rect.add(rectangle);
+//		}
+//		
+//		for(Rectangle value : rect) {
+//			System.out.println("가로 길이는: " + value.getWidth());
+//			System.out.println("세로 길이는: " + value.getHeight());
+//			System.out.println("넓이는: " + value.area());
+//			System.out.println("-------------------------");
+//		}
+//		System.out.println("Rectangle 인스턴스의 개수는: " + Rectangle.count);
+//		
+//		Number number1 = new Number();
+//		Number number2 = new Number();
+//		number1.num1 = 1;
+//		number1.num2 = 1;
+//		
+//		System.out.println(number2.num1);
+//		System.out.println(number2.num2);
 		
-		for(Rectangle value : rect) {
-			System.out.println("가로 길이는: " + value.getWidth());
-			System.out.println("세로 길이는: " + value.getHeight());
-			System.out.println("넓이는: " + value.area());
-			System.out.println("-------------------------");
-		}
-		System.out.println("Rectangle 인스턴스의 개수는: " + );
 		
-		Number number1 = new Number();
-		Number number2 = new Number();
-		number1.num1 = 1;
-		number1.num2 = 1;
+//		230304
+//		Class 상속
 		
-		System.out.println(number2.num1);
-		System.out.println(number2.num2);
+//		Person p = new Person("name", 100);
+//		Student s = new Student();
+//		System.out.println(s.getName());
+//		s.setName("이름이");
+//		System.out.println(s.getName());
+//		p.test();
+//		s.test();
 		
-
+		
+		Animal animal = new Animal();
+		Cat cat = new Cat("냥이", 3);
+		Dog dog = new Dog("멍이", 2);
+		
+		animal.makeSound();
+		cat.makeSound();
+		dog.makeSound();
 		
 	}
 }

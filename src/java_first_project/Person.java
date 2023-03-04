@@ -1,13 +1,19 @@
 package java_first_project;
 
 public class Person {
-	private String name;
+	protected String name;
 	private int age;
 	
 //	생성자
-//	public Person() {
-//		System.out.println("welcome!");
-//	}
+	public Person() {
+		System.out.println("사람 클래스의 인스턴스 생성됨");
+	}
+//	메소드 오버로딩
+	public Person(String name, int age) {
+		System.out.println("사람 클래스의 인스턴스 생성됨2");
+		this.name = name;
+		this.age = age;
+	}
 	
 //	메소드
 	public void myname() {
@@ -29,4 +35,11 @@ public class Person {
 		this.name = name;
 	}
 	
+	public void sleep() {
+		System.out.println("잠자기");
+	}
+	
+	public void test() {
+		System.out.println("test");
+	}
 }

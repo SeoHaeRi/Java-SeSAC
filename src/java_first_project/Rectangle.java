@@ -6,6 +6,7 @@ public class Rectangle {
 	
 	public Rectangle(int width) {
 		this.width = width;
+		count++;
 	}
 
 	public int getWidth() {
@@ -25,7 +26,6 @@ public class Rectangle {
 	}
 
 	public int area() {
-		count++;
 		return this.width * this.height;
 	}
 }
